@@ -61,10 +61,10 @@ spec:
       containers:
       - name: springappcontainer
         image: pasama/spring-boot-mongo:v2
-        ports:
-        - containerPort: 8080
       imagePullSecrets:
       - name: dhcred
+        ports:
+        - containerPort: 8080
         env:
         - name: MONGO_DB_USERNAME
           valueFrom:
